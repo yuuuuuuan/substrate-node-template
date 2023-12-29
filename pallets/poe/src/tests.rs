@@ -34,7 +34,7 @@ fn revoke_claim_work() {
         let claim = BoundedVec::try_from(vec![0, 1]).unwrap();
         let _ = PoeModule::create_claim(RuntimeOrigin::signed(1), claim.clone());
 
-        assert_ok!(PoeModule::revoke_claim(RuntimeOrigin::signed(1), claim.clone()));
+        assert_ok!(PoeModule::reboke_claim(RuntimeOrigin::signed(1), claim.clone()));
     })
 }
 
