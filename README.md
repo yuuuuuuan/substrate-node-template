@@ -5,7 +5,16 @@ rustup:nightly-x86_64-unknown-linux-gnu
 ```
 cargo build --release
 ```
+## test
+
+```
+cargo test
+```
+
+![img](img/test.PNG)
+
 ## run
+
 ```
 ./target/release/node-template --dev
 ```
