@@ -1,7 +1,7 @@
 use super::*;
 use crate::{mock::*, Error};
 use frame_support::{assert_noop, assert_ok, BoundedVec};
-use frame_system::AccountId;
+use frame_system::ensure_signed;
 
 #[test]
 fn create_claim_works() {
@@ -71,7 +71,7 @@ fn transfer_claim_works() {
 
         let _ = PoeModule::create_claim(RuntimeOrigin::signed(1), claim.clone());
 
-        assert_ok!(PoeModule::transfer_claim(RuntimeOrigin::signed(1), claim.clone(), AccountId::new("receiver")));
+        assert_ok!(PoeModule::transfer_claim(RuntimeOrigin::signed(1), claim.clone(), 0x0000000000000000000000000000000000000000));
     })
 }
 
@@ -81,7 +81,7 @@ fn transfer_claim_failed_when_claim_is_not_exist() {
         let claim = BoundedVec::try_from(vec![0, 1]).unwrap();
 
         assert_noop!(
-            PoeModule::transfer_claim(RuntimeOrigin::signed(1), claim.clone(), AccountId::new("receiver")),
+            PoeModule::transfer_claim(RuntimeOrigin::signed(1), claim.clone(), 0x0000000000000000000000000000000000000000),
             Error::<Test>::ClaimNotExist
         );
     })
@@ -93,7 +93,7 @@ fn transfer_claim_failed_when_not_claim_owner() {
         let claim = BoundedVec::try_from(vec![0, 1]).unwrap();
         let _ = PoeModule::create_claim(RuntimeOrigin::signed(1), claim.clone());
         assert_noop!(
-            PoeModule::transfer_claim(RuntimeOrigin::signed(1), claim.clone(), AccountId::new("1")),
+            PoeModule::transfer_claim(RuntimeOrigin::signed(2), claim.clone(), 0x0000000000000000000000000000000000000000),
             Error::<Test>::NotClaimOwner
         );
     })
