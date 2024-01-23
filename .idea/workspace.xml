@@ -8,13 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f59b5e09-f1e4-4dbf-a783-5db96d424275" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pallets/kitties/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/benchmarking.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/mock.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/tests.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/weights.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pallets/kitties/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pallets/kitties/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +44,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/substrate-node-template/pallets/kitties",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/substrate-node-template/pallets/kitties&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\substrate-node-template\pallets\kitties" />
@@ -128,6 +124,8 @@
       <workItem from="1703954098222" duration="10697000" />
       <workItem from="1704509247211" duration="1465000" />
       <workItem from="1704558773520" duration="2839000" />
+      <workItem from="1705654864414" duration="4959000" />
+      <workItem from="1705991777200" duration="1744000" />
     </task>
     <servers />
   </component>
