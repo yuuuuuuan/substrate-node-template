@@ -1,6 +1,9 @@
-use crate::{mock::*, Error};
+use crate::{mock::*, Error, Event, Kitty};
 use super::*;
 use frame_support::{assert_ok, assert_noop};
+use frame_system::Origin;
+
+const TEST_AMOUNT: u128 = 10000;
 
 #[test]
 fn it_works_for_create(){
@@ -98,22 +101,57 @@ fn it_works_for_transfer() {
     });
 }
 
-// // test for event value
-// #[test]
-// fn it_works_for_event() {
-//     new_test_ext().execute_with(|| {
-//         let kitty_id = 0;
-//         let account_id = 1;
-//         let recepient = 2;
+#[test]
+fn create_kitty_with_event() {
+    new_test_ext().execute_with(|| {
+        let account_id = 1u64;
+        Balances::free_balance(&account_id);
+        let kitty_id = KittiesModule::next_kitty_id();
+        assert_ok!(KittiesModule::create(RuntimeOrigin::signed(account_id)));
+        let kitty = KittiesModule::kitties(kitty_id).unwrap();
+        let event = Event::KittyCreated { who: account_id, kitty_id, kitty};
+        println!("{:?}", event);
+        System::assert_last_event(event.into());
+    });
+}
 
-// 		assert_ok!(KittiesModule::create(RuntimeOrigin::signed(account_id)));
+#[test]
+fn breed_kitty_with_event() {
+    new_test_ext().execute_with(|| {
+        let account_id = 1u64;
+        Balances::free_balance(&account_id);
+        let kitty_id_1 = KittiesModule::next_kitty_id();
+        assert_ok!(KittiesModule::create(RuntimeOrigin::signed(account_id)));
+        let kitty_id_2 = KittiesModule::next_kitty_id();
+        assert_ok!(KittiesModule::create(RuntimeOrigin::signed(account_id)));
+        let kitty_id = KittiesModule::next_kitty_id();
+        assert_ok!(KittiesModule::breed(
+			RuntimeOrigin::signed(account_id),
+			kitty_id_1,
+			kitty_id_2
+		));
+        let kitty = KittiesModule::kitties(kitty_id).unwrap();
+        let event = Event::KittyBred {who: account_id, kitty_id: kitty_id, kitty: kitty };
+        println!("{:?}", event);
+        System::assert_last_event(event.into());
+    });
+}
 
-// 		let breed_kitty_id = 0;
-// 		let k = KittiesModule::kitties(breed_kitty_id).unwrap();
-// 		System::assert_has_event(RuntimeEvent::KittiesModule(crate::Event::KittyCreated { who: account_id, kitty_id: breed_kitty_id, kitty: k }));
-
-// 		assert_ok!(KittiesModule::transfer(RuntimeOrigin::signed(account_id), recepient, kitty_id));
-
-// 		System::assert_has_event(RuntimeEvent::KittiesModule(Event::KittyTransferred { who:account_id, to: recepient, kitty_id }));
-//     });
-// }
+#[test]
+fn transfer_kitty_with_event() {
+    new_test_ext().execute_with(|| {
+        let account_id = 1u64;
+        Balances::free_balance(&account_id);
+        let kitty_id = KittiesModule::next_kitty_id();
+        assert_ok!(KittiesModule::create(RuntimeOrigin::signed(account_id)));
+        let recipient_id = 2u64;
+        assert_ok!(KittiesModule::transfer(
+			RuntimeOrigin::signed(account_id),
+			recipient_id,
+			kitty_id
+		));
+        let event = Event::KittyTransferred {who: account_id, to: recipient_id, kitty_id: kitty_id};
+        println!("{:?}", event);
+        System::assert_last_event(event.into());
+    });
+}

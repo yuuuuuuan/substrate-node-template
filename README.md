@@ -1,6 +1,7 @@
 # substrate-node-template poe mod
 releases:main
 rustup:nightly-x86_64-unknown-linux-gnu
+
 ## build
 ```
 cargo build --release
@@ -41,3 +42,6 @@ cargo test
 
 ![img](/img/transfer4.PNG)
 
+# substrate-node-template kitties mod
+
+## test

@@ -279,6 +279,20 @@ impl pallet_poe::Config for Runtime {
 	type MaxClaimLength = ConstU32<512>;
 }
 
+parameter_types! {
+	pub KittyPalletId: PalletId = PalletId(*b"py/kitty");
+	pub KittyPrice: Balance = EXISTENTIAL_DEPOSIT * 10;
+}
+
+impl pallet_kitties::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+	type WeightInfo = pallet_kitties::weights::SubstrateWeight<Runtime>;
+	type Randomness = RandomnessCollectiveFlip;
+	type Currency = Balances;
+	type KittyPrice = KittyPrice;
+	type PalletId = KittyPalletId;
+}
+
 // Create the runtime by composing the FRAME pallets that were previously configured.
 construct_runtime!(
 	pub struct Runtime {
@@ -292,6 +306,7 @@ construct_runtime!(
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template,
 		PoeModule: pallet_poe,
+		KittiesModule: pallet_kitties,
 	}
 );
 

@@ -8,9 +8,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f59b5e09-f1e4-4dbf-a783-5db96d424275" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/migrations/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/migrations/v1.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/migrations/v2.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pallets/ocw/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/benchmarking.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/mock.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/tests.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/weights.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weekly-homework.md" beforeDir="false" afterPath="$PROJECT_DIR$/Weekly-homework.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pallets/kitties/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pallets/kitties/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pallets/kitties/src/mock.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/mock.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pallets/kitties/src/tests.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/tests.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pallets/kitties/src/weights.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/weights.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,22 +62,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/substrate-node-template/pallets/kitties&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cargo.Test tests::create_kitty_with_event.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/substrate-node-template/pallets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\substrate-node-template\pallets" />
+      <recent name="D:\substrate-node-template\pallets\kitties\src" />
       <recent name="D:\substrate-node-template\pallets\kitties" />
       <recent name="D:\substrate-node-template\pallets\poe\src" />
       <recent name="C:\Users\Administrator\Documents\GitHub\substrate-node-template\pallets\poe\src" />
@@ -68,7 +89,7 @@
       <recent name="D:\substrate-node-template\pallets\kitties\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test substrate-node-template">
+  <component name="RunManager" selected="Cargo.Test tests::create_kitty_with_event">
     <configuration name="Run node-template" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package node-template --bin node-template" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -103,6 +124,28 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test tests::create_kitty_with_event" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package pallet-kitties --lib tests::create_kitty_with_event -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Test tests::create_kitty_with_event" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -125,7 +168,11 @@
       <workItem from="1704509247211" duration="1465000" />
       <workItem from="1704558773520" duration="2839000" />
       <workItem from="1705654864414" duration="4959000" />
-      <workItem from="1705991777200" duration="1744000" />
+      <workItem from="1705991777200" duration="6692000" />
+      <workItem from="1706072277179" duration="6017000" />
+      <workItem from="1706079317444" duration="27072000" />
+      <workItem from="1706257031952" duration="11966000" />
+      <workItem from="1706586980440" duration="4753000" />
     </task>
     <servers />
   </component>
