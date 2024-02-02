@@ -71,6 +71,15 @@ Runtime升级：
 - 使用 js sdk 从浏览器frontend获取到前面写入Offchain Storage的数据 
 - 设计一个场景实例（比如获取一个外部的价格信息），实现从OCW中向链上发起带签名负载的不签名交易，并在Runtime中正确处理
 
+实现：
+
+​	链上随机数（如前面Kitties示例中）与链下随机数的区别：
+
+链上随机数和链下随机数的主要区别在于生成随机数的场所不同。链上随机数是指在区块链上生成随机数。这意味着随机数生成过程是透明的，所有节点都可以验证随机数的真实性和不可预测性。链上随机数通常用于需要公平性和不可预测性的场景。链下随机数是指在链下生成随机数，然后将随机数上传到区块链上。这意味着随机数生成过程不透明，只有生成随机数的人才知道具体的生成过程。链下随机数通常用于不需要高安全性或公平性的场景。
+
+![run4](/img/run4.PNG)
+
+![polka2](/img/polka2.PNG)
 # Week 5
 
 要求：
@@ -86,3 +95,7 @@ Runtime升级：
 - 为 proof of existence (poe) 模块的可调用函数 create_claim, revoke_claim, transfer_claim 添加 benchmark 用例，并且将 benchmark 运行的结果应用在可调用函数上； 
 - 选择 node-template 或者其它节点程序，生成 Chain Spec 文件（两种格式都需要）； 
 - （附加题）根据 Chain Spec，部署公开测试网络
+
+实现：
+
+![run](/img/run6.)

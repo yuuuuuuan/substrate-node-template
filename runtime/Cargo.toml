@@ -105,6 +105,7 @@ runtime-benchmarks = [
 	"pallet-grandpa/runtime-benchmarks",
 	"pallet-sudo/runtime-benchmarks",
 	"pallet-template/runtime-benchmarks",
+	"pallet-poe/runtime-benchmarks",
 	"pallet-kitties/runtime-benchmarks",
 	"pallet-ocw/runtime-benchmarks",
 	"pallet-timestamp/runtime-benchmarks",

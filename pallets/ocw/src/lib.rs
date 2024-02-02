@@ -63,7 +63,7 @@ pub mod pallet {
 	use sp_std::{prelude::*, str};
 
 	const ONCHAIN_TX_KEY: &[u8] = b"ocw-key-";
-	const INDEXING_DATA: &[u8] = b"ocw.indexing.data";
+	const INDEXING_DATA: &[u8] = b"yuan";
 
 	#[derive(Debug, serde::Deserialize, Encode, Decode, Default)]
 	struct IndexingData(u128, Vec<u8>);
