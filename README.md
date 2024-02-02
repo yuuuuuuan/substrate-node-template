@@ -1,4 +1,6 @@
 # substrate-node-template poe mod
+====>[助教批改作业通道](/Weekly-homework.md)<====
+
 releases:main
 rustup:nightly-x86_64-unknown-linux-gnu
 

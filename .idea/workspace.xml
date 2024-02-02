@@ -11,6 +11,7 @@
     <list default="true" id="f59b5e09-f1e4-4dbf-a783-5db96d424275" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weekly-homework.md" beforeDir="false" afterPath="$PROJECT_DIR$/Weekly-homework.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pallets/ocw/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/ocw/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/src/lib.rs" afterDir="false" />
@@ -157,7 +158,7 @@
       <workItem from="1706072277179" duration="6017000" />
       <workItem from="1706079317444" duration="27072000" />
       <workItem from="1706257031952" duration="11966000" />
-      <workItem from="1706586980440" duration="17561000" />
+      <workItem from="1706586980440" duration="18204000" />
     </task>
     <servers />
   </component>
