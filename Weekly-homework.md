@@ -67,11 +67,8 @@ Runtime升级：
 要求：
 
 - 请回答链上随机数（如前面Kitties示例中）与链下随机数的区别 
-
 - 在Offchain Worker中，使用Offchain Indexing特性实现从链上向Offchain Storage中写入数据 
-
 - 使用 js sdk 从浏览器frontend获取到前面写入Offchain Storage的数据 
-
 - 设计一个场景实例（比如获取一个外部的价格信息），实现从OCW中向链上发起带签名负载的不签名交易，并在Runtime中正确处理
 
 # Week 5
@@ -81,3 +78,11 @@ Runtime升级：
 编程作业，需要完成以下要求并且提交代码链接：
 
 - 自己完成并部署一个erc20的智能合约
+
+# Week 6
+
+要求：
+
+- 为 proof of existence (poe) 模块的可调用函数 create_claim, revoke_claim, transfer_claim 添加 benchmark 用例，并且将 benchmark 运行的结果应用在可调用函数上； 
+- 选择 node-template 或者其它节点程序，生成 Chain Spec 文件（两种格式都需要）； 
+- （附加题）根据 Chain Spec，部署公开测试网络

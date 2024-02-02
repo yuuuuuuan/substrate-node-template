@@ -5,28 +5,13 @@
   </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/pallets/ocw/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f59b5e09-f1e4-4dbf-a783-5db96d424275" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/migrations/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/migrations/v1.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/kitties/src/migrations/v2.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/ocw/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/benchmarking.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/mock.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/tests.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/ocw/src/weights.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weekly-homework.md" beforeDir="false" afterPath="$PROJECT_DIR$/Weekly-homework.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/kitties/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/kitties/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/kitties/src/mock.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/mock.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/kitties/src/tests.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/tests.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/kitties/src/weights.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/weights.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pallets/ocw/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/ocw/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/src/lib.rs" afterDir="false" />
     </list>
@@ -172,7 +157,7 @@
       <workItem from="1706072277179" duration="6017000" />
       <workItem from="1706079317444" duration="27072000" />
       <workItem from="1706257031952" duration="11966000" />
-      <workItem from="1706586980440" duration="4753000" />
+      <workItem from="1706586980440" duration="17561000" />
     </task>
     <servers />
   </component>
