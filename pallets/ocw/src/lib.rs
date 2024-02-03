@@ -62,8 +62,8 @@ pub mod pallet {
 	use sp_runtime::offchain::{self, http, storage::StorageValueRef, Duration};
 	use sp_std::{prelude::*, str};
 
-	const ONCHAIN_TX_KEY: &[u8] = b"ocw-key-";
-	const INDEXING_DATA: &[u8] = b"yuan";
+	const ONCHAIN_TX_KEY: &[u8] = b"ocwx-key-";
+	const INDEXING_DATA: &[u8] = b"ocwx.indexing.data";
 
 	#[derive(Debug, serde::Deserialize, Encode, Decode, Default)]
 	struct IndexingData(u128, Vec<u8>);
@@ -316,6 +316,20 @@ pub mod pallet {
 			log::info!("=== offchain_worker === {:?}", n);
 			//Self::log_indexing_data(n);
 			Self::call_fetch_price(n);
+			// even
+			let key = b"testkey";
+			let mut val_ref = StorageValueRef::persistent(key);
+
+			if let Ok(Some(value)) = val_ref.get::<([u8; 32], u64)>() {
+				// print values
+				log::info!("OCW ==> in block, value read: {:?}", value);
+				// delete that key
+				val_ref.clear();
+			} else {
+				let value = b"testvalue";
+				val_ref.set(value);
+			}
+
 		}
 	}
 }

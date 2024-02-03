@@ -88,6 +88,12 @@ Runtime升级：
 
 - 自己完成并部署一个erc20的智能合约
 
+实现：
+
+![erc](/img/run5.PNG)
+
+
+
 # Week 6
 
 要求：
@@ -98,4 +104,4 @@ Runtime升级：
 
 实现：
 
-![run](/img/run6.)
+![run](/img/run6.PNG)

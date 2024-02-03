@@ -8,25 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f59b5e09-f1e4-4dbf-a783-5db96d424275" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.maintain/frame-weight-template.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pallets/poe/src/benchmarking.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stencil-staging-raw.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Weekly-homework.md" beforeDir="false" afterPath="$PROJECT_DIR$/Weekly-homework.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/node/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node/src/chain_spec.rs" beforeDir="false" afterPath="$PROJECT_DIR$/node/src/chain_spec.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/kitties/src/benchmarking.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/kitties/src/benchmarking.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/ocw/src/benchmarking.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/ocw/src/benchmarking.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erc20/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/erc20/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erc20/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/erc20/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erc20/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/erc20/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erc20/markets/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/erc20/markets/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erc20/markets/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/erc20/markets/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erc20/markets/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/erc20/markets/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erc20/trait_erc20/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/erc20/trait_erc20/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erc20/trait_erc20/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/erc20/trait_erc20/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erc20/trait_erc20/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/erc20/trait_erc20/lib.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pallets/ocw/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/ocw/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/poe/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/poe/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/poe/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/poe/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/poe/src/mock.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/poe/src/mock.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pallets/template/src/benchmarking.rs" beforeDir="false" afterPath="$PROJECT_DIR$/pallets/template/src/benchmarking.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +165,7 @@
       <workItem from="1706072277179" duration="6017000" />
       <workItem from="1706079317444" duration="27072000" />
       <workItem from="1706257031952" duration="11966000" />
-      <workItem from="1706586980440" duration="34576000" />
+      <workItem from="1706586980440" duration="40515000" />
     </task>
     <servers />
   </component>
